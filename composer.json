@@ -1,0 +1,29 @@
+{
+    "name": "number7even/metronic-template",
+    "description": "Metronic Template for Number7even Laravel Generator",
+    "keywords": [
+        "number7even",
+        "laravel",
+        "generator",
+        "adminlte",
+        "templates",
+        "bootstrap"
+    ],
+    "version":"5.4.0-dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ITMAX",
+            "email": "riaan@it-max.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Number7even\\MetronicTemplate\\": "src/"
+        }
+    }
+}
