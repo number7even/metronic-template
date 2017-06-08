@@ -1,5 +1,13 @@
 <!-- $FIELD_NAME_TITLE$ Field -->
-<div class="form-group col-sm-12 col-lg-12">
-    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!}
-    {!! Form::textarea('$FIELD_NAME$', null, ['class' => 'form-control']) !!}
+<div class="row">
+	<div class="col-md-6 col-sm-6">
+		<div class="form-group">  
+			<div class="form-group form-md-line-input form-md-floating-label has-info">
+				{{ Form::textarea('$FIELD_NAME$', null, ['size' => '30x3','id'=>'$FIELD_NAME$','class'=>'form-control']) }}
+				 {!! Form::label('$FIELD_NAME$', trans('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_$FIELD_NAME$'))  !!}
+				<i class="fa fa-times-circle clearInput" aria-hidden="true"></i>
+			</div>
+			<span class="help-block">@lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_$FIELD_NAME$_help_text') <span class="textused">0/$FIELD_LENGTH$</span></span>
+		</div>
+	</div>
 </div>

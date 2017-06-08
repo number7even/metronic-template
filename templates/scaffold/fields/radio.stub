@@ -1,3 +1,11 @@
-    <label class="radio-inline">
-        {!! Form::radio('$FIELD_NAME$', "$VALUE$", null) !!} $LABEL$
-    </label>
+<div class="row">
+	<div class="col-md-6 col-sm-6">
+		<div class="form-group">  
+			<div class="form-group form-md-line-input form-md-floating-label has-info">    
+				<label class="radio-inline">
+					{!! Form::radio('$FIELD_NAME$', "$VALUE$", null) !!} $LABEL$
+				</label>
+			</div>
+		</div>
+	</div>
+</div>

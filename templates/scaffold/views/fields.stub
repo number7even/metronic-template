@@ -1,7 +1,7 @@
 $FIELDS$
 
 <!-- Submit Field -->
-<div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') !!}" class="btn btn-default">Cancel</a>
+<div class="form-actions noborder right">
+	{{ Form::submit(trans('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_submit_btn'), array('class' => 'btn blue ')) }}
+	<a type="button" class="btn default" href="{{route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index')}}">@lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_cancel_btn')</a>
 </div>
