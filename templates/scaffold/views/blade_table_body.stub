@@ -21,10 +21,10 @@
 				$FIELD_BODY$
 				<td>
 					@if(isset($access['update-$MODEL_NAME$']) || isset($access['all']))
-						<a href="{{ url('$ROUTE_NAMED_PREFIX$/$MODEL_NAME_PLURAL_CAMEL$/'.$$MODEL_NAME_CAMEL$->$PRIMARY_KEY_NAME$.'/edit/') }}" class="btn btn-sm btn-default btn-circle btn-editable"><i class="fa fa-pencil"></i> </a>
+						<a href="{{ url('$ROUTE_PREFIX$/$MODEL_NAME_PLURAL_CAMEL$/'.$$MODEL_NAME_CAMEL$->$PRIMARY_KEY_NAME$.'/edit/') }}" class="btn btn-sm btn-default btn-circle btn-editable"><i class="fa fa-pencil"></i> </a>
 					@endif
 					@if(isset($access['delete-$MODEL_NAME$']) || isset($access['all']))
-						<a href="{{ url('$ROUTE_NAMED_PREFIX$/$MODEL_NAME_PLURAL_CAMEL$/delete/'.$$MODEL_NAME_CAMEL$->$PRIMARY_KEY_NAME$) }}" class="btn btn-sm btn-default btn-circle " data-action="remove" ><i class="fa fa-remove"></i> </a>
+						<a href="{{ url('$ROUTE_PREFIX$/$MODEL_NAME_PLURAL_CAMEL$/delete/'.$$MODEL_NAME_CAMEL$->$PRIMARY_KEY_NAME$) }}" class="btn btn-sm btn-default btn-circle " data-action="remove" ><i class="fa fa-remove"></i> </a>
 					@endif
 				</td>
 			</tr>
