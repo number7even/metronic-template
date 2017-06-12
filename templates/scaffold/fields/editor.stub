@@ -1,0 +1,10 @@
+<!-- $FIELD_NAME_TITLE$ Field -->
+
+		<div class="form-group">  
+			<div class="form-group form-md-line-input form-md-floating-label has-info">
+				{{ Form::textarea('$FIELD_NAME$', null, ['size' => '30x6','id'=>'$FIELD_NAME$','class'=>'wysihtml5 form-control']) }}
+				 {!! Form::label('$FIELD_NAME$', trans('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_$FIELD_NAME$'))  !!}
+				
+			</div>
+			<span class="help-block">@lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_$FIELD_NAME$_help_text') </span>
+		</div>
