@@ -8,3 +8,10 @@
 			</div>
 			<span class="help-block">@lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_$FIELD_NAME$_help_text') </span>
 		</div>
+@section('style')
+ <link href="{{ asset('assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css')}}" rel="stylesheet" type="text/css" />
+@endsection  
+@section('script')
+<script src="{{ asset('assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js') }}" type="text/javascript"></script>
+@endsection   
