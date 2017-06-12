@@ -1,6 +1,5 @@
 <!-- $FIELD_NAME_TITLE$ Field -->
-<div class="row">
-	<div class="col-md-6 col-sm-6">
+
 		<div class="form-group">  
 			<div class="form-group form-md-line-input form-md-floating-label has-info">
 				{!! Form::file('$FIELD_NAME$', null, array('class'=>'form-control','id'=>'$FIELD_NAME$'))  !!}
@@ -9,6 +8,5 @@
 			</div>
 			<span class="help-block">@lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_$FIELD_NAME$_help_text') <span class="textused">0/$FIELD_LENGTH$</span></span>
 		</div>
-	</div>
-</div>
+
 <div class="clearfix"></div>
