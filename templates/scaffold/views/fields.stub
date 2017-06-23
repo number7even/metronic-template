@@ -3,5 +3,5 @@ $FIELDS$
 <!-- Submit Field -->
 <div class="form-actions noborder right">
 	{{ Form::submit(trans('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_submit_btn'), array('class' => 'btn blue ')) }}
-	<a type="button" class="btn default" href="{{route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index')}}">@lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_cancel_btn')</a>
+	<a type="button" class="btn default" href="{{route('$MODEL_NAME_PLURAL_CAMEL$.index')}}">@lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_cancel_btn')</a>
 </div>
