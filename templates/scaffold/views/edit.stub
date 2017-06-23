@@ -53,7 +53,7 @@
                             <button class="close" data-close="alert"></button> @lang('custom.admin_form_validation_success') 
                         </div>
 						
-                        {!! Form::model($MODEL_NAME_PLURAL_CAMEL$, ['route' => ['$MODEL_NAME_PLURAL_CAMEL$.update', $$MODEL_NAME_PLURAL_CAMEL$->$PRIMARY_KEY_NAME$], 'method' => 'patch']) !!}
+                        {!! Form::model($$MODEL_NAME_PLURAL_CAMEL$, ['route' => ['$MODEL_NAME_PLURAL_CAMEL$.update', $$MODEL_NAME_PLURAL_CAMEL$->$PRIMARY_KEY_NAME$], 'method' => 'patch']) !!}
 
 							@include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
 
