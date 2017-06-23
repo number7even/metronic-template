@@ -1,0 +1,61 @@
+@extends('admin.layouts.index')
+
+@section('content')
+
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper main-style-it-max">
+	<!-- BEGIN CONTENT BODY -->
+	<div class="page-content">
+		<!-- BEGIN PAGE HEAD-->
+		<div class="page-head">
+			<!-- BEGIN PAGE TITLE -->
+			<div class="page-title">
+				<h1><i class="{{$icon_class['admin_menu_left_settings_$MODEL_NAME$_icon']}}" aria-hidden="true"></i> @lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_title') <small>@lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_sub_title')</small>
+					</h1>
+				</div>
+				<!-- END PAGE TITLE -->
+			</div>
+			<!-- END PAGE HEAD-->
+			<!-- BEGIN PAGE BREADCRUMB -->
+				@include('admin/includes/ne_breadcrumb')
+			<!-- END PAGE BREADCRUMB -->
+			<!-- BEGIN PAGE BASE CONTENT -->
+			<div class="row" >
+				<div class="col-md-12 col-sm-12">
+					<div class="portlet light bordered">
+
+						<div class="portlet-title">
+							<div class="caption font-dark"><i class="{{$icon_class['admin_menu_left_settings_$MODEL_NAME$_icon']}}" aria-hidden="true"></i> 
+							   <span class="caption-subject "> @lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_title')</span>
+							</div>
+							
+							
+						</div>
+
+						<div class="portlet-body">
+							
+						</div>
+					</div>
+					<!-- END EXAMPLE TABLE PORTLET-->
+				</div>
+			</div>
+			<!-- END PAGE BASE CONTENT -->
+			<!-- BEGIN FOOTER -->
+				@include('admin/includes/ne_footer')
+			<!-- END FOOTER -->
+		</div>
+		<!-- END CONTENT BODY -->
+	</div>
+	<!-- END CONTENT -->
+	
+	@stop
+
+	@section('style')
+	@endsection	
+
+	@section('script')
+	@endsection
+	
+	@section('custom_js_script')
+		
+	@endsection
