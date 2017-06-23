@@ -53,7 +53,7 @@
                         <div class="alert alert-success display-hide">
                             <button class="close" data-close="alert"></button> @lang('custom.admin_form_validation_success') 
                         </div>
-						{!! Form::open(['route' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
+						{!! Form::open(['route' => '$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
 
 							@include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
 

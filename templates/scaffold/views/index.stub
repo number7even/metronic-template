@@ -30,7 +30,7 @@
 							</div>
 							<div class="actions">
 								@if(isset($access['create-$MODEL_NAME_CAMEL$']) || isset($access['all']))
-								<a id="sample_editable_1_new" class="btn  blue m-t-0" href="{{url('$ROUTE_PREFIX$$MODEL_NAME_PLURAL_CAMEL$/create')}}"> @lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_new_btn')
+								<a id="sample_editable_1_new" class="btn  blue m-t-0" href="{{route('$MODEL_NAME_PLURAL_CAMEL$.create')}}"> @lang('$MODEL_NAME$.admin_$MODEL_NAME$_module_add_new_btn')
 									<i class="fa fa-plus"></i>
 								</a>
 								@endif
