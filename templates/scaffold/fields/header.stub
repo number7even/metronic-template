@@ -2,7 +2,7 @@
 
 		<div class="form-group">  
 			<div class="form-group ">
-				$HEADER_TITLE$
+				<h3>$HEADER_TITLE$</h3>
 			</div>
 			
 		</div>
